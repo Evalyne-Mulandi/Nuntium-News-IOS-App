@@ -1,0 +1,766 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6616FD4D2ABC303400D1A4CB /* Verification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6616FD4C2ABC303400D1A4CB /* Verification.storyboard */; };
+		6616FD4F2ABC3A1900D1A4CB /* Verification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6616FD4E2ABC3A1900D1A4CB /* Verification.swift */; };
+		6616FD512ABC445600D1A4CB /* NewPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6616FD502ABC445600D1A4CB /* NewPassword.swift */; };
+		6616FD542ABC459F00D1A4CB /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6616FD532ABC459F00D1A4CB /* Signup.storyboard */; };
+		6616FD562ABC4C4700D1A4CB /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6616FD552ABC4C4700D1A4CB /* SignUp.swift */; };
+		66596CE92AB440C300DF494D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66596CE82AB440C300DF494D /* AppDelegate.swift */; };
+		66596CEB2AB440C300DF494D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66596CEA2AB440C300DF494D /* SceneDelegate.swift */; };
+		66596CED2AB440C300DF494D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66596CEC2AB440C300DF494D /* ViewController.swift */; };
+		66596CF02AB440C300DF494D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66596CEE2AB440C300DF494D /* Main.storyboard */; };
+		66596CF32AB440C300DF494D /* nuntium.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 66596CF12AB440C300DF494D /* nuntium.xcdatamodeld */; };
+		66596CF82AB440C700DF494D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66596CF62AB440C700DF494D /* LaunchScreen.storyboard */; };
+		66596D032AB440C800DF494D /* nuntiumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66596D022AB440C800DF494D /* nuntiumTests.swift */; };
+		66596D0D2AB440C800DF494D /* nuntiumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66596D0C2AB440C800DF494D /* nuntiumUITests.swift */; };
+		66596D0F2AB440C800DF494D /* nuntiumUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66596D0E2AB440C800DF494D /* nuntiumUITestsLaunchTests.swift */; };
+		66596D1E2AB44B6B00DF494D /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66596D1D2AB44B6B00DF494D /* Onboarding.storyboard */; };
+		66596D202AB450C200DF494D /* WelcomeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66596D1F2AB450C200DF494D /* WelcomeScreen.storyboard */; };
+		66596D222AB4544B00DF494D /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66596D212AB4544B00DF494D /* SignIn.storyboard */; };
+		66596D292AB46BAC00DF494D /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66596D272AB46BAC00DF494D /* NewsTableViewCell.swift */; };
+		66596D2A2AB46BAC00DF494D /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66596D282AB46BAC00DF494D /* NewsTableViewCell.xib */; };
+		66596D352AB840EF00DF494D /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66596D332AB840EF00DF494D /* Article.swift */; };
+		66596D382AB8481B00DF494D /* Homepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66596D372AB8481B00DF494D /* Homepage.swift */; };
+		66596D3B2AB84EEF00DF494D /* FavTopics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66596D392AB84EEF00DF494D /* FavTopics.swift */; };
+		66596D472AB85A1800DF494D /* SFPRODISPLAYHEAVYITALIC.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 66596D3E2AB85A1700DF494D /* SFPRODISPLAYHEAVYITALIC.OTF */; };
+		66596D482AB85A1800DF494D /* SFPRODISPLAYBOLD.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 66596D3F2AB85A1700DF494D /* SFPRODISPLAYBOLD.OTF */; };
+		66596D492AB85A1800DF494D /* SFPRODISPLAYMEDIUM.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 66596D402AB85A1700DF494D /* SFPRODISPLAYMEDIUM.OTF */; };
+		66596D4A2AB85A1800DF494D /* SFPRODISPLAYSEMIBOLDITALIC.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 66596D412AB85A1700DF494D /* SFPRODISPLAYSEMIBOLDITALIC.OTF */; };
+		66596D4B2AB85A1800DF494D /* SFPRODISPLAYBLACKITALIC.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 66596D422AB85A1700DF494D /* SFPRODISPLAYBLACKITALIC.OTF */; };
+		66596D4C2AB85A1800DF494D /* SFPRODISPLAYULTRALIGHTITALIC.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 66596D432AB85A1700DF494D /* SFPRODISPLAYULTRALIGHTITALIC.OTF */; };
+		66596D4D2AB85A1800DF494D /* SFPRODISPLAYTHINITALIC.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 66596D442AB85A1800DF494D /* SFPRODISPLAYTHINITALIC.OTF */; };
+		66596D4E2AB85A1800DF494D /* SFPRODISPLAYREGULAR.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 66596D452AB85A1800DF494D /* SFPRODISPLAYREGULAR.OTF */; };
+		66596D4F2AB85A1800DF494D /* SFPRODISPLAYLIGHTITALIC.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 66596D462AB85A1800DF494D /* SFPRODISPLAYLIGHTITALIC.OTF */; };
+		66596D512AB8662C00DF494D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66596D502AB8662B00DF494D /* Assets.xcassets */; };
+		66596D542AB8793400DF494D /* newsmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66596D532AB8793400DF494D /* newsmodel.swift */; };
+		66596D5E2AB9703200DF494D /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66596D5D2AB9703200DF494D /* OnboardingViewController.swift */; };
+		66596D602AB9813F00DF494D /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66596D5F2AB9813F00DF494D /* WelcomeScreen.swift */; };
+		66596D622AB987E600DF494D /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66596D612AB987E600DF494D /* SignIn.swift */; };
+		66596D642AB98F7000DF494D /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66596D632AB98F7000DF494D /* LaunchScreen.swift */; };
+		6671D3072ABB250B0022BF9F /* NewPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6671D3062ABB250B0022BF9F /* NewPassword.storyboard */; };
+		6671D3092ABB27170022BF9F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6671D3082ABB27170022BF9F /* Home.storyboard */; };
+		66C265AB2ABAEE2300D661B2 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C265AA2ABAEE2300D661B2 /* ForgotPassword.swift */; };
+		66C265AD2ABB1B3D00D661B2 /* Article.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66C265AC2ABB1B3D00D661B2 /* Article.storyboard */; };
+		66C265AF2ABB1E3B00D661B2 /* FavTopics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66C265AE2ABB1E3B00D661B2 /* FavTopics.storyboard */; };
+		66C265B12ABB1F9B00D661B2 /* ForgotPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66C265B02ABB1F9B00D661B2 /* ForgotPassword.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		66596CFF2AB440C800DF494D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66596CDD2AB440C300DF494D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66596CE42AB440C300DF494D;
+			remoteInfo = nuntium;
+		};
+		66596D092AB440C800DF494D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66596CDD2AB440C300DF494D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66596CE42AB440C300DF494D;
+			remoteInfo = nuntium;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6616FD4C2ABC303400D1A4CB /* Verification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Verification.storyboard; sourceTree = "<group>"; };
+		6616FD4E2ABC3A1900D1A4CB /* Verification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verification.swift; sourceTree = "<group>"; };
+		6616FD502ABC445600D1A4CB /* NewPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPassword.swift; sourceTree = "<group>"; };
+		6616FD532ABC459F00D1A4CB /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
+		6616FD552ABC4C4700D1A4CB /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		66596CE52AB440C300DF494D /* nuntium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nuntium.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		66596CE82AB440C300DF494D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		66596CEA2AB440C300DF494D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		66596CEC2AB440C300DF494D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		66596CEF2AB440C300DF494D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		66596CF22AB440C300DF494D /* nuntium.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = nuntium.xcdatamodel; sourceTree = "<group>"; };
+		66596CF72AB440C700DF494D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		66596CF92AB440C700DF494D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66596CFE2AB440C800DF494D /* nuntiumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nuntiumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66596D022AB440C800DF494D /* nuntiumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nuntiumTests.swift; sourceTree = "<group>"; };
+		66596D082AB440C800DF494D /* nuntiumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nuntiumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66596D0C2AB440C800DF494D /* nuntiumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nuntiumUITests.swift; sourceTree = "<group>"; };
+		66596D0E2AB440C800DF494D /* nuntiumUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nuntiumUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		66596D1D2AB44B6B00DF494D /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		66596D1F2AB450C200DF494D /* WelcomeScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WelcomeScreen.storyboard; sourceTree = "<group>"; };
+		66596D212AB4544B00DF494D /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
+		66596D272AB46BAC00DF494D /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		66596D282AB46BAC00DF494D /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
+		66596D332AB840EF00DF494D /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		66596D372AB8481B00DF494D /* Homepage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homepage.swift; sourceTree = "<group>"; };
+		66596D392AB84EEF00DF494D /* FavTopics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavTopics.swift; sourceTree = "<group>"; };
+		66596D3E2AB85A1700DF494D /* SFPRODISPLAYHEAVYITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = SFPRODISPLAYHEAVYITALIC.OTF; path = "../../../../Downloads/sf-pro-display-cufonfonts/SFPRODISPLAYHEAVYITALIC.OTF"; sourceTree = "<group>"; };
+		66596D3F2AB85A1700DF494D /* SFPRODISPLAYBOLD.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = SFPRODISPLAYBOLD.OTF; path = "../../../../Downloads/sf-pro-display-cufonfonts/SFPRODISPLAYBOLD.OTF"; sourceTree = "<group>"; };
+		66596D402AB85A1700DF494D /* SFPRODISPLAYMEDIUM.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = SFPRODISPLAYMEDIUM.OTF; path = "../../../../Downloads/sf-pro-display-cufonfonts/SFPRODISPLAYMEDIUM.OTF"; sourceTree = "<group>"; };
+		66596D412AB85A1700DF494D /* SFPRODISPLAYSEMIBOLDITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = SFPRODISPLAYSEMIBOLDITALIC.OTF; path = "../../../../Downloads/sf-pro-display-cufonfonts/SFPRODISPLAYSEMIBOLDITALIC.OTF"; sourceTree = "<group>"; };
+		66596D422AB85A1700DF494D /* SFPRODISPLAYBLACKITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = SFPRODISPLAYBLACKITALIC.OTF; path = "../../../../Downloads/sf-pro-display-cufonfonts/SFPRODISPLAYBLACKITALIC.OTF"; sourceTree = "<group>"; };
+		66596D432AB85A1700DF494D /* SFPRODISPLAYULTRALIGHTITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = SFPRODISPLAYULTRALIGHTITALIC.OTF; path = "../../../../Downloads/sf-pro-display-cufonfonts/SFPRODISPLAYULTRALIGHTITALIC.OTF"; sourceTree = "<group>"; };
+		66596D442AB85A1800DF494D /* SFPRODISPLAYTHINITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = SFPRODISPLAYTHINITALIC.OTF; path = "../../../../Downloads/sf-pro-display-cufonfonts/SFPRODISPLAYTHINITALIC.OTF"; sourceTree = "<group>"; };
+		66596D452AB85A1800DF494D /* SFPRODISPLAYREGULAR.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = SFPRODISPLAYREGULAR.OTF; path = "../../../../Downloads/sf-pro-display-cufonfonts/SFPRODISPLAYREGULAR.OTF"; sourceTree = "<group>"; };
+		66596D462AB85A1800DF494D /* SFPRODISPLAYLIGHTITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = SFPRODISPLAYLIGHTITALIC.OTF; path = "../../../../Downloads/sf-pro-display-cufonfonts/SFPRODISPLAYLIGHTITALIC.OTF"; sourceTree = "<group>"; };
+		66596D502AB8662B00DF494D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66596D532AB8793400DF494D /* newsmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsmodel.swift; sourceTree = "<group>"; };
+		66596D5D2AB9703200DF494D /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		66596D5F2AB9813F00DF494D /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
+		66596D612AB987E600DF494D /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		66596D632AB98F7000DF494D /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		6671D3062ABB250B0022BF9F /* NewPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewPassword.storyboard; sourceTree = "<group>"; };
+		6671D3082ABB27170022BF9F /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		66C265AA2ABAEE2300D661B2 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
+		66C265AC2ABB1B3D00D661B2 /* Article.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Article.storyboard; sourceTree = "<group>"; };
+		66C265AE2ABB1E3B00D661B2 /* FavTopics.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FavTopics.storyboard; sourceTree = "<group>"; };
+		66C265B02ABB1F9B00D661B2 /* ForgotPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPassword.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66596CE22AB440C300DF494D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66596CFB2AB440C800DF494D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66596D052AB440C800DF494D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		66596CDC2AB440C300DF494D = {
+			isa = PBXGroup;
+			children = (
+				66596CE72AB440C300DF494D /* nuntium */,
+				66596D012AB440C800DF494D /* nuntiumTests */,
+				66596D0B2AB440C800DF494D /* nuntiumUITests */,
+				66596CE62AB440C300DF494D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		66596CE62AB440C300DF494D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66596CE52AB440C300DF494D /* nuntium.app */,
+				66596CFE2AB440C800DF494D /* nuntiumTests.xctest */,
+				66596D082AB440C800DF494D /* nuntiumUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66596CE72AB440C300DF494D /* nuntium */ = {
+			isa = PBXGroup;
+			children = (
+				66596CE82AB440C300DF494D /* AppDelegate.swift */,
+				6671D3082ABB27170022BF9F /* Home.storyboard */,
+				66596CEA2AB440C300DF494D /* SceneDelegate.swift */,
+				66596CEC2AB440C300DF494D /* ViewController.swift */,
+				66596CEE2AB440C300DF494D /* Main.storyboard */,
+				66596CF62AB440C700DF494D /* LaunchScreen.storyboard */,
+				66596D632AB98F7000DF494D /* LaunchScreen.swift */,
+				66596D5D2AB9703200DF494D /* OnboardingViewController.swift */,
+				66596D1D2AB44B6B00DF494D /* Onboarding.storyboard */,
+				66596D1F2AB450C200DF494D /* WelcomeScreen.storyboard */,
+				66596D5F2AB9813F00DF494D /* WelcomeScreen.swift */,
+				66596D3D2AB859D100DF494D /* Font */,
+				66596D212AB4544B00DF494D /* SignIn.storyboard */,
+				66596D612AB987E600DF494D /* SignIn.swift */,
+				66C265B02ABB1F9B00D661B2 /* ForgotPassword.storyboard */,
+				66596D392AB84EEF00DF494D /* FavTopics.swift */,
+				66C265AE2ABB1E3B00D661B2 /* FavTopics.storyboard */,
+				66596D372AB8481B00DF494D /* Homepage.swift */,
+				66596D332AB840EF00DF494D /* Article.swift */,
+				66596D502AB8662B00DF494D /* Assets.xcassets */,
+				66596D272AB46BAC00DF494D /* NewsTableViewCell.swift */,
+				66596D282AB46BAC00DF494D /* NewsTableViewCell.xib */,
+				66596D522AB8790B00DF494D /* Model */,
+				66596CF92AB440C700DF494D /* Info.plist */,
+				66596CF12AB440C300DF494D /* nuntium.xcdatamodeld */,
+				66C265AA2ABAEE2300D661B2 /* ForgotPassword.swift */,
+				66C265AC2ABB1B3D00D661B2 /* Article.storyboard */,
+				6671D3062ABB250B0022BF9F /* NewPassword.storyboard */,
+				6616FD4C2ABC303400D1A4CB /* Verification.storyboard */,
+				6616FD4E2ABC3A1900D1A4CB /* Verification.swift */,
+				6616FD502ABC445600D1A4CB /* NewPassword.swift */,
+				6616FD532ABC459F00D1A4CB /* Signup.storyboard */,
+				6616FD552ABC4C4700D1A4CB /* SignUp.swift */,
+			);
+			path = nuntium;
+			sourceTree = "<group>";
+		};
+		66596D012AB440C800DF494D /* nuntiumTests */ = {
+			isa = PBXGroup;
+			children = (
+				66596D022AB440C800DF494D /* nuntiumTests.swift */,
+			);
+			path = nuntiumTests;
+			sourceTree = "<group>";
+		};
+		66596D0B2AB440C800DF494D /* nuntiumUITests */ = {
+			isa = PBXGroup;
+			children = (
+				66596D0C2AB440C800DF494D /* nuntiumUITests.swift */,
+				66596D0E2AB440C800DF494D /* nuntiumUITestsLaunchTests.swift */,
+			);
+			path = nuntiumUITests;
+			sourceTree = "<group>";
+		};
+		66596D3D2AB859D100DF494D /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				66596D422AB85A1700DF494D /* SFPRODISPLAYBLACKITALIC.OTF */,
+				66596D3F2AB85A1700DF494D /* SFPRODISPLAYBOLD.OTF */,
+				66596D3E2AB85A1700DF494D /* SFPRODISPLAYHEAVYITALIC.OTF */,
+				66596D462AB85A1800DF494D /* SFPRODISPLAYLIGHTITALIC.OTF */,
+				66596D402AB85A1700DF494D /* SFPRODISPLAYMEDIUM.OTF */,
+				66596D452AB85A1800DF494D /* SFPRODISPLAYREGULAR.OTF */,
+				66596D412AB85A1700DF494D /* SFPRODISPLAYSEMIBOLDITALIC.OTF */,
+				66596D442AB85A1800DF494D /* SFPRODISPLAYTHINITALIC.OTF */,
+				66596D432AB85A1700DF494D /* SFPRODISPLAYULTRALIGHTITALIC.OTF */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		66596D522AB8790B00DF494D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				66596D532AB8793400DF494D /* newsmodel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66596CE42AB440C300DF494D /* nuntium */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66596D122AB440C800DF494D /* Build configuration list for PBXNativeTarget "nuntium" */;
+			buildPhases = (
+				66596CE12AB440C300DF494D /* Sources */,
+				66596CE22AB440C300DF494D /* Frameworks */,
+				66596CE32AB440C300DF494D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = nuntium;
+			productName = nuntium;
+			productReference = 66596CE52AB440C300DF494D /* nuntium.app */;
+			productType = "com.apple.product-type.application";
+		};
+		66596CFD2AB440C800DF494D /* nuntiumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66596D152AB440C800DF494D /* Build configuration list for PBXNativeTarget "nuntiumTests" */;
+			buildPhases = (
+				66596CFA2AB440C800DF494D /* Sources */,
+				66596CFB2AB440C800DF494D /* Frameworks */,
+				66596CFC2AB440C800DF494D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66596D002AB440C800DF494D /* PBXTargetDependency */,
+			);
+			name = nuntiumTests;
+			productName = nuntiumTests;
+			productReference = 66596CFE2AB440C800DF494D /* nuntiumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		66596D072AB440C800DF494D /* nuntiumUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66596D182AB440C800DF494D /* Build configuration list for PBXNativeTarget "nuntiumUITests" */;
+			buildPhases = (
+				66596D042AB440C800DF494D /* Sources */,
+				66596D052AB440C800DF494D /* Frameworks */,
+				66596D062AB440C800DF494D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66596D0A2AB440C800DF494D /* PBXTargetDependency */,
+			);
+			name = nuntiumUITests;
+			productName = nuntiumUITests;
+			productReference = 66596D082AB440C800DF494D /* nuntiumUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66596CDD2AB440C300DF494D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					66596CE42AB440C300DF494D = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					66596CFD2AB440C800DF494D = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 66596CE42AB440C300DF494D;
+					};
+					66596D072AB440C800DF494D = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 66596CE42AB440C300DF494D;
+					};
+				};
+			};
+			buildConfigurationList = 66596CE02AB440C300DF494D /* Build configuration list for PBXProject "nuntium" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 66596CDC2AB440C300DF494D;
+			productRefGroup = 66596CE62AB440C300DF494D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66596CE42AB440C300DF494D /* nuntium */,
+				66596CFD2AB440C800DF494D /* nuntiumTests */,
+				66596D072AB440C800DF494D /* nuntiumUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66596CE32AB440C300DF494D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66596D4B2AB85A1800DF494D /* SFPRODISPLAYBLACKITALIC.OTF in Resources */,
+				66596D492AB85A1800DF494D /* SFPRODISPLAYMEDIUM.OTF in Resources */,
+				66596CF82AB440C700DF494D /* LaunchScreen.storyboard in Resources */,
+				66596D512AB8662C00DF494D /* Assets.xcassets in Resources */,
+				66C265B12ABB1F9B00D661B2 /* ForgotPassword.storyboard in Resources */,
+				66596D472AB85A1800DF494D /* SFPRODISPLAYHEAVYITALIC.OTF in Resources */,
+				6616FD4D2ABC303400D1A4CB /* Verification.storyboard in Resources */,
+				66596D222AB4544B00DF494D /* SignIn.storyboard in Resources */,
+				66596CF02AB440C300DF494D /* Main.storyboard in Resources */,
+				66596D4E2AB85A1800DF494D /* SFPRODISPLAYREGULAR.OTF in Resources */,
+				66C265AF2ABB1E3B00D661B2 /* FavTopics.storyboard in Resources */,
+				66596D1E2AB44B6B00DF494D /* Onboarding.storyboard in Resources */,
+				66596D4F2AB85A1800DF494D /* SFPRODISPLAYLIGHTITALIC.OTF in Resources */,
+				66C265AD2ABB1B3D00D661B2 /* Article.storyboard in Resources */,
+				66596D4D2AB85A1800DF494D /* SFPRODISPLAYTHINITALIC.OTF in Resources */,
+				66596D4A2AB85A1800DF494D /* SFPRODISPLAYSEMIBOLDITALIC.OTF in Resources */,
+				66596D202AB450C200DF494D /* WelcomeScreen.storyboard in Resources */,
+				66596D2A2AB46BAC00DF494D /* NewsTableViewCell.xib in Resources */,
+				6671D3072ABB250B0022BF9F /* NewPassword.storyboard in Resources */,
+				66596D4C2AB85A1800DF494D /* SFPRODISPLAYULTRALIGHTITALIC.OTF in Resources */,
+				6671D3092ABB27170022BF9F /* Home.storyboard in Resources */,
+				6616FD542ABC459F00D1A4CB /* Signup.storyboard in Resources */,
+				66596D482AB85A1800DF494D /* SFPRODISPLAYBOLD.OTF in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66596CFC2AB440C800DF494D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66596D062AB440C800DF494D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66596CE12AB440C300DF494D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6616FD4F2ABC3A1900D1A4CB /* Verification.swift in Sources */,
+				66596D642AB98F7000DF494D /* LaunchScreen.swift in Sources */,
+				66596D352AB840EF00DF494D /* Article.swift in Sources */,
+				66596D542AB8793400DF494D /* newsmodel.swift in Sources */,
+				66596D5E2AB9703200DF494D /* OnboardingViewController.swift in Sources */,
+				66596D3B2AB84EEF00DF494D /* FavTopics.swift in Sources */,
+				66596CF32AB440C300DF494D /* nuntium.xcdatamodeld in Sources */,
+				66596CED2AB440C300DF494D /* ViewController.swift in Sources */,
+				66C265AB2ABAEE2300D661B2 /* ForgotPassword.swift in Sources */,
+				6616FD512ABC445600D1A4CB /* NewPassword.swift in Sources */,
+				66596D292AB46BAC00DF494D /* NewsTableViewCell.swift in Sources */,
+				66596D622AB987E600DF494D /* SignIn.swift in Sources */,
+				66596D602AB9813F00DF494D /* WelcomeScreen.swift in Sources */,
+				66596CE92AB440C300DF494D /* AppDelegate.swift in Sources */,
+				66596CEB2AB440C300DF494D /* SceneDelegate.swift in Sources */,
+				66596D382AB8481B00DF494D /* Homepage.swift in Sources */,
+				6616FD562ABC4C4700D1A4CB /* SignUp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66596CFA2AB440C800DF494D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66596D032AB440C800DF494D /* nuntiumTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66596D042AB440C800DF494D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66596D0D2AB440C800DF494D /* nuntiumUITests.swift in Sources */,
+				66596D0F2AB440C800DF494D /* nuntiumUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		66596D002AB440C800DF494D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66596CE42AB440C300DF494D /* nuntium */;
+			targetProxy = 66596CFF2AB440C800DF494D /* PBXContainerItemProxy */;
+		};
+		66596D0A2AB440C800DF494D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66596CE42AB440C300DF494D /* nuntium */;
+			targetProxy = 66596D092AB440C800DF494D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		66596CEE2AB440C300DF494D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66596CEF2AB440C300DF494D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		66596CF62AB440C700DF494D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66596CF72AB440C700DF494D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		66596D102AB440C800DF494D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		66596D112AB440C800DF494D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66596D132AB440C800DF494D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = nuntium/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kocela.nuntium;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		66596D142AB440C800DF494D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = nuntium/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kocela.nuntium;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		66596D162AB440C800DF494D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kocela.nuntiumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nuntium.app/nuntium";
+			};
+			name = Debug;
+		};
+		66596D172AB440C800DF494D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kocela.nuntiumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nuntium.app/nuntium";
+			};
+			name = Release;
+		};
+		66596D192AB440C800DF494D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kocela.nuntiumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = nuntium;
+			};
+			name = Debug;
+		};
+		66596D1A2AB440C800DF494D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kocela.nuntiumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = nuntium;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66596CE02AB440C300DF494D /* Build configuration list for PBXProject "nuntium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66596D102AB440C800DF494D /* Debug */,
+				66596D112AB440C800DF494D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66596D122AB440C800DF494D /* Build configuration list for PBXNativeTarget "nuntium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66596D132AB440C800DF494D /* Debug */,
+				66596D142AB440C800DF494D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66596D152AB440C800DF494D /* Build configuration list for PBXNativeTarget "nuntiumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66596D162AB440C800DF494D /* Debug */,
+				66596D172AB440C800DF494D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66596D182AB440C800DF494D /* Build configuration list for PBXNativeTarget "nuntiumUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66596D192AB440C800DF494D /* Debug */,
+				66596D1A2AB440C800DF494D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		66596CF12AB440C300DF494D /* nuntium.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				66596CF22AB440C300DF494D /* nuntium.xcdatamodel */,
+			);
+			currentVersion = 66596CF22AB440C300DF494D /* nuntium.xcdatamodel */;
+			path = nuntium.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 66596CDD2AB440C300DF494D /* Project object */;
+}
