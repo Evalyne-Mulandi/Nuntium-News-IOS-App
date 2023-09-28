@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -52,13 +53,8 @@
                                         <rect key="frame" x="20" y="210" width="374" height="51"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </searchBar>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="23B-pY-LJK">
-                                        <rect key="frame" x="-415" y="398" width="1243" height="99"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                    </view>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="192" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="IYl-Vk-c2z">
-                                        <rect key="frame" x="20" y="309" width="374" height="570"/>
+                                        <rect key="frame" x="20" y="402" width="374" height="490"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <inset key="scrollIndicatorInsets" minX="0.0" minY="24" maxX="0.0" maxY="24"/>
                                         <prototypes>
@@ -72,23 +68,51 @@
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UG4-8E-nOn">
+                                        <rect key="frame" x="20" y="274" width="374" height="108"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="108" id="HSJ-Cw-Pyp"/>
+                                            <constraint firstAttribute="width" constant="374" id="ngN-s6-Zxn"/>
+                                        </constraints>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SbN-Af-eq9">
+                                            <size key="itemSize" width="120" height="71"/>
+                                            <size key="estimatedItemSize" width="100" height="71"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Sbh-HB-PhO">
+                                                <rect key="frame" x="0.0" y="18.5" width="120" height="71"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="TcF-Zf-d41">
+                                                    <rect key="frame" x="0.0" y="0.0" width="120" height="71"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </collectionViewCellContentView>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="MXN-mH-291"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="IYl-Vk-c2z" firstAttribute="bottom" secondItem="MXN-mH-291" secondAttribute="bottom" id="1Ll-5t-D75"/>
-                                    <constraint firstItem="IYl-Vk-c2z" firstAttribute="leading" secondItem="MXN-mH-291" secondAttribute="leading" constant="20" id="4VE-9B-RAf"/>
                                     <constraint firstItem="qtn-5i-Wfb" firstAttribute="top" secondItem="1up-95-oTL" secondAttribute="bottom" constant="37.5" id="6e7-Kz-INv"/>
                                     <constraint firstAttribute="trailing" secondItem="qtn-5i-Wfb" secondAttribute="trailing" constant="20" id="Aod-j1-dAN"/>
-                                    <constraint firstItem="MXN-mH-291" firstAttribute="trailing" secondItem="IYl-Vk-c2z" secondAttribute="trailing" constant="20" id="AqC-Dd-pH0"/>
                                     <constraint firstItem="X1P-9J-Avk" firstAttribute="leading" secondItem="MXN-mH-291" secondAttribute="leading" constant="20" id="BOP-lU-h7W"/>
                                     <constraint firstItem="X1P-9J-Avk" firstAttribute="top" secondItem="MXN-mH-291" secondAttribute="top" constant="72" id="Gtl-j9-w0s"/>
                                     <constraint firstItem="MXN-mH-291" firstAttribute="trailing" secondItem="1up-95-oTL" secondAttribute="trailing" constant="206.5" id="HG2-qf-bc6"/>
                                     <constraint firstItem="1up-95-oTL" firstAttribute="leading" secondItem="MXN-mH-291" secondAttribute="leading" constant="20" id="IC2-gI-ttW"/>
-                                    <constraint firstItem="IYl-Vk-c2z" firstAttribute="top" secondItem="qtn-5i-Wfb" secondAttribute="bottom" constant="48" id="Ih3-oY-0uj"/>
                                     <constraint firstItem="qtn-5i-Wfb" firstAttribute="leading" secondItem="MXN-mH-291" secondAttribute="leading" constant="20" id="JTY-7w-z7U"/>
+                                    <constraint firstItem="UG4-8E-nOn" firstAttribute="top" secondItem="qtn-5i-Wfb" secondAttribute="bottom" constant="13" id="NVz-Xb-vHB"/>
+                                    <constraint firstAttribute="bottom" secondItem="IYl-Vk-c2z" secondAttribute="bottom" constant="4" id="PNH-Sb-OKt"/>
+                                    <constraint firstItem="IYl-Vk-c2z" firstAttribute="top" secondItem="UG4-8E-nOn" secondAttribute="bottom" constant="20" id="QGA-sD-Wfc"/>
+                                    <constraint firstItem="MXN-mH-291" firstAttribute="trailing" secondItem="IYl-Vk-c2z" secondAttribute="trailing" constant="20" id="RrY-fH-5bT"/>
                                     <constraint firstItem="1up-95-oTL" firstAttribute="top" secondItem="X1P-9J-Avk" secondAttribute="bottom" constant="8" symbolic="YES" id="hC7-jh-cCk"/>
+                                    <constraint firstItem="UG4-8E-nOn" firstAttribute="leading" secondItem="MXN-mH-291" secondAttribute="leading" constant="20" id="iEm-yr-ada"/>
+                                    <constraint firstItem="IYl-Vk-c2z" firstAttribute="leading" secondItem="MXN-mH-291" secondAttribute="leading" constant="20" id="lfv-1Z-azp"/>
                                     <constraint firstItem="MXN-mH-291" firstAttribute="trailing" secondItem="X1P-9J-Avk" secondAttribute="trailing" constant="312" id="smK-57-1N8"/>
+                                    <constraint firstItem="MXN-mH-291" firstAttribute="trailing" secondItem="UG4-8E-nOn" secondAttribute="trailing" constant="20" id="yyg-xE-lDj"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -96,6 +120,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="buttonsCollectionView" destination="UG4-8E-nOn" id="IWV-kZ-Qay"/>
                         <outlet property="newsTableView" destination="IYl-Vk-c2z" id="VgA-Vn-70Z"/>
                         <outlet property="search" destination="qtn-5i-Wfb" id="Ctb-gt-I8Q"/>
                     </connections>

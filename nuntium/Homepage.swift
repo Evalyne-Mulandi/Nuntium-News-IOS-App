@@ -7,8 +7,9 @@
 
 import UIKit
 
-class Homepage: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
-    
+
+class Homepage: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UICollectionViewDataSource, UICollectionViewDelegate {
+ 
     
     @IBOutlet weak var newsTableView : UITableView!
     
@@ -22,12 +23,15 @@ class Homepage: UIViewController, UITableViewDelegate, UITableViewDataSource, UI
     @IBOutlet weak var buttonsCollectionView : UICollectionView!
     
     
-    @IBOutlet var buttons : [UIButton]!
-    
-    
+    @IBOutlet var buttonsTopic : [UIButton]!
+    var selectedButtonTags : Set<Int> = []
+    var buttonInfoArrayHomepage = buttonInfoArray
+    var filteredbuttonInfoArrayHomepage = buttonInfoArray
+
     var articles : [Article] = []
     var filteredArticles : [Article] = []
 
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return filteredArticles.count;
        
@@ -102,39 +106,71 @@ class Homepage: UIViewController, UITableViewDelegate, UITableViewDataSource, UI
         newsTableView.reloadData()
     }
     
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+       
+        return filteredbuttonInfoArrayHomepage.count
+
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        print("CollectionView(_:cellForItemAt:) called")
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ButtonCollectionViewCell", for: indexPath) as! ButtonCollectionViewCell
+        
+        
+        let buttonInfo = filteredbuttonInfoArrayHomepage[indexPath.item]
+        cell.topicButton.tag = buttonInfo.tag
+        cell.topicButton.setTitle(buttonInfo.topic, for: .normal)
+        cell.topicButton.backgroundColor = UIColor(named: "ButtonSelectedColor")
+        
+        
+        
+        if buttonInfo.topic == "Random" {
+            
+            cell.topicButton.tag = buttonInfo.tag
+            cell.topicButton.setTitle(buttonInfo.topic, for: .normal)
+            cell.topicButton.backgroundColor = .systemIndigo
+            cell.topicButton.setTitleColor(UIColor.white, for: .normal)
+            print("Random Color btn")
+        }
+        else if selectedButtonTags.contains(buttonInfo.tag) {
+            
+//            cell.topicButton.tag = buttonInfo.tag
+//            cell.topicButton.setTitle(buttonInfo.topic, for: .normal)
+            cell.topicButton.backgroundColor = UIColor(named: "ButtonDefaultColor")
+            
+        }
+        
+        return cell
+        
+    }
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
        
+        //Load saved button tags from UserDefaults
+        if let savedButtonTags = UserDefaults.standard.array(forKey: "ClickedButtonTags") as? [Int]{
+            selectedButtonTags = Set(savedButtonTags)
+            
+            print("Loaded button tags from User defaults : \(selectedButtonTags)")
+            
+            filteredbuttonInfoArrayHomepage = buttonInfoArrayHomepage.filter {
+                [savedButtonTags] buttonInfo in
+                return savedButtonTags.contains(buttonInfo.tag)
+            }
+            
+            
+            if let randomButtonInfo = buttonInfoArrayHomepage.firstIndex(where: {$0.topic == "Random"}) {
+                filteredbuttonInfoArrayHomepage.insert(buttonInfoArrayHomepage[randomButtonInfo], at: 0)
+            }
+        }
+        
     
-        
-//
-//        //Initialize button colors to the default color
-//        for button in buttons {
-//            button.backgroundColor = UIColor(named: "buttonDefaultColor")
-//        }
-//
-//        //Load saved button states from UserDefaults
-//        if let savedButtonTags = UserDefaults.standard.array(forKey: "ClickedButtonTags") as? [Int]{
-//            let clickedButtonTags = Set(savedButtonTags)
-//
-//           // Iterate through all buttons
-//            for button in buttons{
-//                if clickedButtonTags.contains(button.tag){
-//                    button.backgroundColor = UIColor(named: "buttonClickedColor")
-//                    button.isHidden = false
-//                } else {
-//                    button.backgroundColor = UIColor(named: "buttonDefaultColor")
-//                    button.isHidden = true
-//                }
-//            }
-//        } else{
-//            for button in buttons {
-//                button.isHidden = true
-//            }
-//        }
-//
-        
         newsTableView.delegate = self
         newsTableView.dataSource = self
         search.delegate = self
@@ -152,9 +188,18 @@ class Homepage: UIViewController, UITableViewDelegate, UITableViewDataSource, UI
             }
 
         }
-                
+      
+        buttonsCollectionView.register(UINib(nibName: "ButtonCollectionViewCell", bundle: .main), forCellWithReuseIdentifier: "ButtonCollectionViewCell")
+        print("buttonInfoArray count: \(filteredbuttonInfoArrayHomepage)")
+        buttonsCollectionView.delegate = self
+        buttonsCollectionView.dataSource = self
         
-        print("articles -- \(articles)")
+        
+        
+        buttonsCollectionView.reloadData()
+        
+        
+        
         
         // Do any additional setup after loading the view.
         newsTableView.register(UINib(nibName: "NewsTableViewCell", bundle: .main), forCellReuseIdentifier: "NewsTableViewCell")
@@ -162,20 +207,9 @@ class Homepage: UIViewController, UITableViewDelegate, UITableViewDataSource, UI
         newsTableView.estimatedRowHeight = 279
         
         newsTableView.reloadData()
+        
     }
-//    @IBAction func buttonTapped(_ sender: UIButton){
-//        //Toggle the buttons color based on its current state
-//        if sender.backgroundColor == UIColor(named: "buttonDefaultColor"){
-//            sender.backgroundColor = UIColor(named: "buttonClickedColor")
-//            clickedButtonTags.insert(sender.tag)
-//        } else {
-//            sender.backgroundColor = UIColor(named: "buttonDefaultColor")
-//            clickedButtonTags.remove(sender.tag)
-//        }
-//
-//        //Save the clicked button tags to User Defaults
-//        UserDefaults.standard.set(Array(clickedButtonTags), forKey: "ClickedButtonTags")
-//    }
+
     
     @IBAction func navigateToArticles() {
         
@@ -205,6 +239,7 @@ extension UIImageView {
         }
     }
 }
+
 
 
 

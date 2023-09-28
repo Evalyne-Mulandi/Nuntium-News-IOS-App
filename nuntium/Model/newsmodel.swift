@@ -78,7 +78,7 @@ func decodeAPI(query:String = "f1" , completion: @escaping ([Article]?) -> Void)
         if let data = data{
             do{
                 let jsonData = try jsonDecoder.decode(ResponseData.self, from: data)
-                print(jsonData)
+                
                 completion(jsonData.articles)
 
             }catch{

@@ -46,10 +46,13 @@
 		66596D642AB98F7000DF494D /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66596D632AB98F7000DF494D /* LaunchScreen.swift */; };
 		6671D3072ABB250B0022BF9F /* NewPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6671D3062ABB250B0022BF9F /* NewPassword.storyboard */; };
 		6671D3092ABB27170022BF9F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6671D3082ABB27170022BF9F /* Home.storyboard */; };
+		669C45E42AC18B0800282C06 /* ButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669C45E22AC18B0800282C06 /* ButtonCollectionViewCell.swift */; };
+		669C45E52AC18B0800282C06 /* ButtonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 669C45E32AC18B0800282C06 /* ButtonCollectionViewCell.xib */; };
 		66C265AB2ABAEE2300D661B2 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C265AA2ABAEE2300D661B2 /* ForgotPassword.swift */; };
 		66C265AD2ABB1B3D00D661B2 /* Article.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66C265AC2ABB1B3D00D661B2 /* Article.storyboard */; };
 		66C265AF2ABB1E3B00D661B2 /* FavTopics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66C265AE2ABB1E3B00D661B2 /* FavTopics.storyboard */; };
 		66C265B12ABB1F9B00D661B2 /* ForgotPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66C265B02ABB1F9B00D661B2 /* ForgotPassword.storyboard */; };
+		66E4E7062AC2B8D7009C702C /* ButtonInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E4E7052AC2B8D7009C702C /* ButtonInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,10 +116,13 @@
 		66596D632AB98F7000DF494D /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		6671D3062ABB250B0022BF9F /* NewPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewPassword.storyboard; sourceTree = "<group>"; };
 		6671D3082ABB27170022BF9F /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		669C45E22AC18B0800282C06 /* ButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCollectionViewCell.swift; sourceTree = "<group>"; };
+		669C45E32AC18B0800282C06 /* ButtonCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonCollectionViewCell.xib; sourceTree = "<group>"; };
 		66C265AA2ABAEE2300D661B2 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 		66C265AC2ABB1B3D00D661B2 /* Article.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Article.storyboard; sourceTree = "<group>"; };
 		66C265AE2ABB1E3B00D661B2 /* FavTopics.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FavTopics.storyboard; sourceTree = "<group>"; };
 		66C265B02ABB1F9B00D661B2 /* ForgotPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPassword.storyboard; sourceTree = "<group>"; };
+		66E4E7052AC2B8D7009C702C /* ButtonInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +175,8 @@
 			children = (
 				66596CE82AB440C300DF494D /* AppDelegate.swift */,
 				6671D3082ABB27170022BF9F /* Home.storyboard */,
+				669C45E22AC18B0800282C06 /* ButtonCollectionViewCell.swift */,
+				669C45E32AC18B0800282C06 /* ButtonCollectionViewCell.xib */,
 				66596CEA2AB440C300DF494D /* SceneDelegate.swift */,
 				66596CEC2AB440C300DF494D /* ViewController.swift */,
 				66596CEE2AB440C300DF494D /* Main.storyboard */,
@@ -241,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				66596D532AB8793400DF494D /* newsmodel.swift */,
+				66E4E7052AC2B8D7009C702C /* ButtonInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -357,6 +366,7 @@
 				66596D472AB85A1800DF494D /* SFPRODISPLAYHEAVYITALIC.OTF in Resources */,
 				6616FD4D2ABC303400D1A4CB /* Verification.storyboard in Resources */,
 				66596D222AB4544B00DF494D /* SignIn.storyboard in Resources */,
+				669C45E52AC18B0800282C06 /* ButtonCollectionViewCell.xib in Resources */,
 				66596CF02AB440C300DF494D /* Main.storyboard in Resources */,
 				66596D4E2AB85A1800DF494D /* SFPRODISPLAYREGULAR.OTF in Resources */,
 				66C265AF2ABB1E3B00D661B2 /* FavTopics.storyboard in Resources */,
@@ -404,6 +414,7 @@
 				66596D3B2AB84EEF00DF494D /* FavTopics.swift in Sources */,
 				66596CF32AB440C300DF494D /* nuntium.xcdatamodeld in Sources */,
 				66596CED2AB440C300DF494D /* ViewController.swift in Sources */,
+				66E4E7062AC2B8D7009C702C /* ButtonInfo.swift in Sources */,
 				66C265AB2ABAEE2300D661B2 /* ForgotPassword.swift in Sources */,
 				6616FD512ABC445600D1A4CB /* NewPassword.swift in Sources */,
 				66596D292AB46BAC00DF494D /* NewsTableViewCell.swift in Sources */,
@@ -412,6 +423,7 @@
 				66596CE92AB440C300DF494D /* AppDelegate.swift in Sources */,
 				66596CEB2AB440C300DF494D /* SceneDelegate.swift in Sources */,
 				66596D382AB8481B00DF494D /* Homepage.swift in Sources */,
+				669C45E42AC18B0800282C06 /* ButtonCollectionViewCell.swift in Sources */,
 				6616FD562ABC4C4700D1A4CB /* SignUp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
